@@ -12,6 +12,8 @@ public class TasksTest
 {
 	public WebDriver acessarAplicacao()
 	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Proton\\ProtonClient\\Drivers\\chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://localhost:8001/tasks/");
 		
